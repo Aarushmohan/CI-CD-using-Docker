@@ -8,7 +8,7 @@ String password = request.getParameter("password");
 Class.forName("com.mysql.jdbc.Driver");
 java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://10.12.124.82:3306/testdb1", "testuser", "root");
 Statement st = con.createStatement();
-ResultSet rs = st.executeQuery("select * from users where userid='" + userid + "' and password='" + password + "'");
+ResultSet rs = st.executeQuery("select * from USER where userid='" + userid + "' and password='" + password + "'");
 try {
  rs.next();
  if (rs.getString("password").equals(password) && rs.getString("userid").equals(userid)) {

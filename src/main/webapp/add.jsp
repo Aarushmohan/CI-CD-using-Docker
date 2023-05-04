@@ -3,7 +3,7 @@
 <%@page import="java.sql.*,java.util.*"%>
 <%
 String userid = request.getParameter("username");
-session.putValue("userid", username);
+session.putValue("userid", userid);
 String password = request.getParameter("password");
 Class.forName("com.mysql.jdbc.Driver");
 java.sql.Connection con = DriverManager.getConnection("jdbc:mysql://10.12.124.82:3306/testdb1", "testuser", "root");

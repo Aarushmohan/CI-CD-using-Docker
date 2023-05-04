@@ -10,7 +10,14 @@
         <title>Registration</title>
     </head>
     <body bgcolor="pink">
-
+    <h1>Login Page</h1>
+    <form method="post" action="login.jsp">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
 
     <%-- Check if username and password are valid --%>
     <% 

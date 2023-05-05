@@ -198,11 +198,11 @@ span.psw {
     <hr>
         <table>
         <tr>   
-    <marquee >
+    
      <h1>
         WELCOME TO BANGALORE METROPOLITON TRANSPORT CORPORATION
     </h1>
-        </marquee>
+        
         </tr>
         </table>
     <img src="https://www.indiaspend.com/h-upload/old_images/343409-bmtc-1.jpg" width="100%" height="0%">

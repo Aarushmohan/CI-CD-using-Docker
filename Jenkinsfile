@@ -36,7 +36,7 @@ pipeline {
                 sh 'mvn package'             
           }
         }
-
+/*
 stage('push the artifacts to nexus')
 	{
 		steps{
@@ -58,7 +58,7 @@ stage('push the artifacts to nexus')
 
 	}	
 	}
-
+*/
   stage('Docker Build and Tag') {
            steps {
 		   
@@ -70,7 +70,7 @@ stage('push the artifacts to nexus')
         
 		
 		
-     
+     /*
   stage('Publish image to Docker Hub') {
           
 	  steps{
@@ -92,7 +92,7 @@ stage('push the artifacts to nexus')
 			sh 'docker push 10.12.124.82:9000/db'
 		}
 	}
-	
+	*/
 
       stage('Run Docker container on Jenkins Agent') {
              
